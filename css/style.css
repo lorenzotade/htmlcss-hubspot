@@ -1,3 +1,4 @@
+/* GLOBALE */
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,189 @@
   transform: translate(-50%, -50%);
 }
 
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.chevron {
+  padding-left: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+li a {
+  text-decoration: none;
+  color: #32495B;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+  min-width: 1200px;
+}
+
+/* BUTTONS */
+.btn {
+  background-color: #FE7759;
+  border: 1px solid #FE7759;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.btn-large {
+  padding: 20px;
+}
+
+#login {
+  background-color: #FAFCFE;
+  color: #FE7759;
+}
+
+/* CONTAINERS */
+.container-70 {
+  height: 100%;
+  padding: 0 15%;
+}
+
+.container-60 {
+  height: 100%;
+  padding: 0 20%;
+}
+
+/* HEADER */
+
+/* NAV */
+nav.menu {
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+nav.menu-fixed {
+  /* position: fixed;
+  top: 0; */
+  width: 100%;
+  z-index: 999;
+  background-color: #F4F9FD;
+  border-bottom: 1px solid #32495B;
+}
+
+nav.menu li {
+  display: inline-block;
+  font-size: .9em;
+  padding-right: 20px;
+}
+
+nav .menu-right li {
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+nav.menu .lang .chevron {
+  padding-left: 5px;
+  padding-right: 20px;
+  border-right: 2px solid #899398;
+}
+
+nav.menu .logo {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+#search {
+  color: #05A3BD;
+  font-size: 0.9em;
+}
+
+/* JUMBOTRON */
+header .jumbotron {
+  position: relative;
+  height: 600px;
+  background-color: aqua;
+}
+
+.jumbotron::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #B0EBE4;
+}
+
+/* MAIN */
+
+/* INFO */
+main {
+  background-color: #F4F9FD;
+}
+
+main .first-info {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+  background-color: blue;
+}
+
+/* FEATURES */
+main .features {
+  height: 1100px;
+  background-color: brown;
+}
+
+.features .main-feature {
+  height: 340px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: burlywood;
+}
+
+.features .marketing,
+.features .sales,
+.features .services {
+  background-color: burlywood;
+  min-height: 660px;
+  margin: 50px 0;
+}
+
+.features .sales {
+  margin: 50px 5%;
+}
+
+/* SECOND INFO */
+main .second-info {
+  height: 700px;
+  background-color: lightcoral;
+}
+
+/* CUSTOMERS */
+main .customers {
+  height: 250px;
+  background-color: hotpink;
+}
+
+/* START */
+main .start {
+  height: 450px;
+  background-color: lawngreen;
+}
+
+/* FOOTER */
+footer {
+  min-height: 620px;
+  background-color: #32495B;
 }
