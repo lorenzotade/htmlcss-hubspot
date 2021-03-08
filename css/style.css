@@ -18,6 +18,10 @@
   transform: translate(-50%, -50%);
 }
 
+.w-75 {
+  width: 75%;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -61,6 +65,7 @@ p.description-medium {
 p.description-small {
   font-size: .8em;
   word-spacing: 1px;
+  margin-top: 50px;
 }
 
 li a {
@@ -70,6 +75,7 @@ li a {
 
 h1, h2, h3, h4 {
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 body {
@@ -167,13 +173,25 @@ nav.menu .logo {
 header .jumbotron {
   position: relative;
   height: 690px;
-  overflow: hidden;
-  border-bottom: 3px solid #33475B;
+  /* overflow: hidden; */
+  /* border-bottom: 3px solid #33475B; */
   background-image: url(../img/jumbotron.png);
   background-size: 100% 100%;
 }
 
-.jumbotron .jumbo-banner {
+header .jumbotron::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 80px;
+  background-color: #B0EBE4;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;
+}
+
+/* .jumbotron .jumbo-banner {
   height: 100%;
   width: 100vw;
   overflow: hidden;
@@ -181,7 +199,7 @@ header .jumbotron {
   border-top: 3px solid #33475B;
   background-repeat: no-repeat;
   transform: translateY(600px);
-}
+} */
 
 .jumbotron .jumbo-text {
   position: absolute;
@@ -192,12 +210,8 @@ header .jumbotron {
 
 .jumbotron .jumbo-text h1 {
   font-size: 3em;
-  font-weight: 600;
 }
 
-.jumbotron .description-small {
-  margin-top: 50px;
-}
 /* MAIN */
 
 /* INFO */
@@ -219,7 +233,6 @@ main .first-info img {
 
 main .first-info h2 {
   font-size: 1.8em;
-  font-weight: 600;
 }
 
 /* FEATURES */
@@ -263,10 +276,6 @@ main .features {
   padding: 50px 0;
 }
 
-.features h3 {
-  font-weight: 600;
-}
-
 .features .main-feature .right-side .description-medium {
   min-height: 50px;
   margin-bottom: 30px;
@@ -274,7 +283,6 @@ main .features {
 
 .features h4 {
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .features .marketing,
@@ -302,7 +310,6 @@ main .features {
   background-color: #899398;
 }
 
-
 .features .sales {
   margin: 50px 5%;
 }
@@ -321,10 +328,14 @@ main .second-info {
   padding: 15px 30px;
 }
 
-.table .cell .bold {
+.second-info .table .cell .bold {
   font-size: 2em;
   font-weight: 800;
   margin: 15px 0;
+}
+
+.second-info .table .cell .description-small {
+  margin-top: 15px;
 }
 
 .second-info .table .cell:not(:nth-child(4n+0)) {
@@ -337,18 +348,61 @@ main .second-info {
 
 /* CUSTOMERS */
 main .customers {
-  height: 700px;
-  background-color: hotpink;
+  position: relative;
+  height: 250px;
+  padding-top: 50px;
+}
+
+main .customers .customers-text {
+  display: inline-block;
+}
+
+main .customers .customers-text h2 {
+  font-size: 2.3em;
+}
+
+main .customers .menu {
+  width: 60%;
+  line-height: 60px;
+}
+
+main .customers img {
+width: 100px;
+vertical-align: middle;
 }
 
 /* START */
 main .start {
-  height: 450px;
-  background-color: lawngreen;
+  height: 400px;
+  padding-top: 50px;
+}
+
+main .start .start-img img {
+  width: 50%;
+}
+
+main .start h2 {
+  text-transform: capitalize;
 }
 
 /* FOOTER */
 footer {
   min-height: 620px;
   background-color: #32495B;
+}
+
+footer .footer-col {
+  padding-top: 50px;
+  height: 50%;
+  color: #FFFFFF;
+  font-size: .8em;
+}
+
+footer .footer-col .menu {
+  min-height: 250px;
+}
+
+footer .footer-col li {
+  display: block;
+  color: #CED9E5;
 }
