@@ -26,6 +26,10 @@
   width: 30%;
 }
 
+.w-25 {
+  width: 25%;
+}
+
 .chevron {
   padding-left: 20px;
 }
@@ -62,6 +66,10 @@ p.description-small {
 li a {
   text-decoration: none;
   color: #32495B;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 30px;
 }
 
 body {
@@ -185,7 +193,6 @@ header .jumbotron {
 .jumbotron .jumbo-text h1 {
   font-size: 3em;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
 .jumbotron .description-small {
@@ -213,7 +220,6 @@ main .first-info img {
 main .first-info h2 {
   font-size: 1.8em;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
 /* FEATURES */
@@ -258,7 +264,6 @@ main .features {
 }
 
 .features h3 {
-  margin-bottom: 30px;
   font-weight: 600;
 }
 
@@ -270,7 +275,6 @@ main .features {
 .features h4 {
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 30px;
 }
 
 .features .marketing,
@@ -305,13 +309,35 @@ main .features {
 
 /* SECOND INFO */
 main .second-info {
-  height: 700px;
-  background-color: lightcoral;
+  height: 600px;
+  background-image: linear-gradient(90deg, #00AAB8, #02BBA8);
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 50px;
+}
+.second-info .table .cell {
+  height: 150px;
+  min-height: 150px;
+  padding: 15px 30px;
+}
+
+.table .cell .bold {
+  font-size: 2em;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.second-info .table .cell:not(:nth-child(4n+0)) {
+  border-right: 1px solid #FFFFFF;
+}
+
+.second-info .table .cell:nth-child(n+5) {
+  border-top: 1px solid #FFFFFF;
 }
 
 /* CUSTOMERS */
 main .customers {
-  height: 250px;
+  height: 700px;
   background-color: hotpink;
 }
 
