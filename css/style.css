@@ -30,6 +30,11 @@
   padding-left: 20px;
 }
 
+.check {
+  margin-right: 10px;
+  color: #FE7759;
+}
+
 .float-left {
   float: left;
 }
@@ -116,10 +121,17 @@ nav.non-fixed {
   margin-top: 80px;
 }
 
-nav.menu li {
+.menu li {
+  list-style: none;
   display: inline-block;
   font-size: .9em;
   padding-right: 20px;
+}
+
+.vertical-menu {
+  display: block;
+  text-align: left;
+  margin-bottom: 70px;
 }
 
 nav .menu-right li {
@@ -160,7 +172,7 @@ header .jumbotron {
   background-color: #B0EBE4;
   border-top: 3px solid #33475B;
   background-repeat: no-repeat;
-  transform: translateY(605px);
+  transform: translateY(600px);
 }
 
 .jumbotron .jumbo-text {
@@ -188,31 +200,104 @@ main {
 
 main .first-info {
   height: 400px;
-  width: 100%;
+  width: 60%;
+  margin: auto;
   text-align: center;
-  background-color: blue;
+  padding-top: 50px;
+}
+
+main .first-info img {
+  height: 150px;
+}
+
+main .first-info h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 /* FEATURES */
 main .features {
   height: 1100px;
-  background-color: brown;
+  /* background-color: brown; */
+}
+
+.features .shadow {
+  box-shadow: 2px 2px 5px #E6ECF0, -2px -2px 5px #E6ECF0 ;
 }
 
 .features .main-feature {
   height: 340px;
   width: 100%;
   margin-top: 30px;
-  background-color: burlywood;
+  background-color: #FFFFFF;
+}
+
+.features .main-feature .left-side {
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  margin: 0 30px;
+  overflow: hidden;
+}
+
+.features .main-feature .left-side img {
+  margin: 50px;
+}
+
+.features img {
+  height: 100px;
+  margin: 20px 0;
+}
+
+.features .main-feature .right-side {
+  height: 100%;
+  width: 60%;
+  margin: 0 30px;
+  padding: 50px 0;
+}
+
+.features h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.features .main-feature .right-side .description-medium {
+  min-height: 50px;
+  margin-bottom: 30px;
+}
+
+.features h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .features .marketing,
 .features .sales,
 .features .services {
-  background-color: burlywood;
+  text-align: center;
+  background-color: #FFFFFF;
   min-height: 660px;
   margin: 50px 0;
+  padding: 0 20px;
 }
+
+.features .description-medium {
+  position: relative;
+  min-height: 170px;
+}
+
+.features .description-medium::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #899398;
+}
+
 
 .features .sales {
   margin: 50px 5%;
