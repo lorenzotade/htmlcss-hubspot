@@ -335,6 +335,11 @@ main .second-info {
   margin: 15px 0;
 }
 
+.second-info .table .cell .bold::after {
+  content: '+';
+  font-weight: 400;
+}
+
 .second-info .table .cell .description-small {
   margin-top: 15px;
 }
