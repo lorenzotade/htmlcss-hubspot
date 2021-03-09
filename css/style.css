@@ -119,7 +119,6 @@ body {
 nav.menu {
   height: 80px;
   line-height: 80px;
-  overflow: hidden;
 }
 
 nav.menu-fixed {
@@ -135,6 +134,36 @@ nav.non-fixed {
   margin-top: 80px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  display: none;
+  z-index: 6;
+  background-color: #FFFFFF;
+  min-width: 100px;
+  line-height: 10px;
+}
+
+.dropdown-content li {
+  width: 100%;
+  padding: 15px;
+}
+
+.dropdown-content li a {
+  color: #000000;
+  font-weight: 600;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .menu li {
   list-style: none;
   display: inline-block;
@@ -143,7 +172,6 @@ nav.non-fixed {
 }
 
 .vertical-menu {
-  display: block;
   text-align: left;
   margin-bottom: 70px;
 }
@@ -242,7 +270,7 @@ main .features {
   /* background-color: brown; */
 }
 
-.features .shadow {
+.shadow {
   box-shadow: 2px 2px 5px #E6ECF0, -2px -2px 5px #E6ECF0 ;
 }
 
