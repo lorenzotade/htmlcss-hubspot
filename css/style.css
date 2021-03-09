@@ -179,13 +179,13 @@ header .jumbotron {
   background-size: 100% 100%;
 }
 
-header .jumbotron::after {
+.jumbotron::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   width: 100vw;
-  height: 80px;
+  min-height: 80px;
   background-color: #B0EBE4;
   border-top: 3px solid #33475B;
   border-bottom: 3px solid #33475B;
@@ -195,6 +195,7 @@ header .jumbotron::after {
   height: 100%;
   width: 100vw;
   overflow: hidden;
+  z-index: 3;
   background-color: #B0EBE4;
   border-top: 3px solid #33475B;
   background-repeat: no-repeat;
@@ -203,7 +204,7 @@ header .jumbotron::after {
 
 .jumbotron .jumbo-text {
   position: absolute;
-  height: 100%;
+  height: 90%;
   padding-left: 15%;
   top: 50px;
 }
@@ -282,7 +283,9 @@ main .features {
 }
 
 .features h4 {
+  position: relative;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 
 .features .marketing,
@@ -296,18 +299,16 @@ main .features {
 }
 
 .features .description-medium {
-  position: relative;
-  min-height: 170px;
+  min-height: 140px;
 }
 
-.features .description-medium::after {
+.features h4::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 2px;
-  background-color: #899398;
+  border: 1px solid #899398;
 }
 
 .features .sales {
@@ -392,17 +393,54 @@ footer {
 }
 
 footer .footer-col {
-  padding-top: 50px;
-  height: 50%;
+  padding: 50px 20px 0 20px;
   color: #FFFFFF;
-  font-size: .8em;
-}
-
-footer .footer-col .menu {
-  min-height: 250px;
+  overflow: hidden;
 }
 
 footer .footer-col li {
-  display: block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+footer li a {
   color: #CED9E5;
+  width: 100%;
+  height: 100%;
+}
+
+footer li a:hover {
+  color: #00AAB8;
+}
+
+#contact {
+  background-color: #FAFCFE;
+  border: 1px solid #FAFCFE;
+  color: #32495B;
+}
+
+footer .footer-col .icons-menu {
+  margin-top: 10px;
+}
+
+footer .footer-col .icons-menu li {
+  width: 18%;
+}
+
+footer .languages {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #CED9E5;
+}
+
+footer .credits-left img {
+  height: 25px;
+  fill:#CED9E5;
+}
+
+footer .credits-left p {
+  font-size: .8em;
+  color: #FFFFFF;
 }
